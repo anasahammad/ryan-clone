@@ -1,38 +1,17 @@
+import { Link } from "react-router-dom";
 import { Button } from "../../../../Components/ui/button";
 import { Card, CardContent } from "../../../../Components/ui/card";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, } from "../../../../Components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react"
-import businessImage from "../../../../assets/business_image.jpg"
-import { Link } from "react-router-dom";
-import { FaEye } from "react-icons/fa6";
 
-const stats = [
-    { name: "Total orders", value: "0" },
-    { name: "Ordered items over time", value: "0" },
-    { name: "Returns", value: "0" },
-    { name: "Fulfilled orders over time", value: "0" },
-    { name: "Delivered orders over time", value: "0" },
-    { name: "Time to fulfill", value: "0 min" },
-  ]
-const Orders = () => {
+
+
+const Catalogs = () => {
     return (
         <div className="container mx-auto p-4 space-y-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Orders</h1>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" >
-                More actions <ChevronDown className="ml-2 h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>
-                <FaEye/>
-                <span>Show analytics bar</span>
-              </DropdownMenuItem>
-              
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <h1 className="text-2xl font-bold">Catalogs</h1>
+          <Button variant={"ghost"} className="ml-auto">Export</Button>
+          <Button variant={"ghost"} className="">Import</Button>
+          <Button>Create Catalo</Button>
         </div>
   
         {/* <Card>
@@ -58,15 +37,15 @@ const Orders = () => {
         <Card>
           <CardContent className="p-8 flex flex-col items-center justify-center min-h-[400px] text-center">
             <img
-              src={businessImage}
+              src=""
               alt=""
               className="mb-4 w-32 h-32"
             />
-            <h2 className="text-xl font-semibold mb-2">Your orders will show here</h2>
+            <h2 className="text-xl font-semibold mb-2">Personalize wholesale buying with catalogs</h2>
             <p className="text-gray-500 mb-4">
-              This is where you'll fulfill orders, collect payments, and track order progress.
+            Set buyer-specific prices and assign them to the company without the use of tags or apps.
             </p>
-            <Button variant={""}>Create order</Button>
+            <Button variant={""}>Create catalog</Button>
           </CardContent>
          
         </Card>
@@ -74,11 +53,11 @@ const Orders = () => {
         <div className="flex justify-center items-center">
           <span className="mr-2">Learn more about</span>
             <Link to={"/"} className="text-blue-500 underline">
-               orders
+               catalogs
             </Link>
           </div>
       </div>
     );
 };
 
-export default Orders;
+export default Catalogs;

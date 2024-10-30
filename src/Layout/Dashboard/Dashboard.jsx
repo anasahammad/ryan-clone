@@ -86,7 +86,7 @@ const [dropDown, setDropDown] = useState()
          
         </div>
         <div className="border-t p-3 bg-[#EBEBEB] w-full">
-       <NavLink to="/dashboard/settings" className={({ isActive }) =>
+       <NavLink to="/dashboard/settings/general" className={({ isActive }) =>
               isActive
                 ? "text-sm font-semibold flex items-center gap-2 border bg-white  py-1 rounded-md" // Active style
                 : "hover:bg-gray-100 hover:rounded-lg font-semibold flex items-center   text-sm  gap-2"

@@ -1,9 +1,10 @@
+import ProductTable from "../../../../Components/Products/ProductTable";
 
 
 const Products = () => {
     return (
         <div>
-           This is Product page 
+            <ProductTable/>
         </div>
     );
 };

@@ -54,11 +54,11 @@ export const navLinks = [
         },
         {
             label: "Purchase orders",
-            path: "/dashboard/products/purchase_orders"
+            path: "/dashboard/purchase_orders"
         },
         {
             label: "Transfers",
-            path: "/dashboard/products/transfers"
+            path: "/dashboard/transfers"
         },
         {
             label: "Gift cards",
@@ -66,7 +66,7 @@ export const navLinks = [
         },
         {
             label: "Catalogs",
-            path: "/dashboard/products/catalogs"
+            path: "/dashboard/catalogs"
         },
 
     ],
@@ -84,7 +84,7 @@ export const navLinks = [
         
           {
             label: "Companies",
-            path: "/dashboard/customers/companies"
+            path: "/dashboard/companies"
         },
         
       ],
@@ -97,7 +97,7 @@ export const navLinks = [
         
         {
           label: "Metaobjects",
-          path: "/dashboard/content/metaobjects"
+          path: "/dashboard/metaobjects"
       },
       
         {
@@ -258,7 +258,7 @@ const Navbar = () => {
         </div>
 
         <div className="border-t p-3 bg-white w-full">
-       <NavLink to="/dashboard/settings" className={({ isActive }) =>
+       <NavLink to="/dashboard/settings/general" className={({ isActive }) =>
               isActive
                 ? "text-base font-semibold flex items-center gap-2 border bg-white  py-1 rounded-md" // Active style
                 : "text-base font-semibold flex items-center gap-2"

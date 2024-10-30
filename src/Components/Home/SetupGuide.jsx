@@ -8,7 +8,7 @@ import { Checkbox } from "../ui/checkbox";
 
 
 const SetupGuide = () => {
-    const [isExpanded, setIsExpanded] = useState(true)
+    const [isExpanded, setIsExpanded] = useState(false)
 
   const steps = [
     {
